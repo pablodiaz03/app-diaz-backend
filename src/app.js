@@ -1,45 +1,17 @@
 import express from 'express';
-import ProductManager from '../ProductManager.js';
+import { productsRouter } from './routers/products.router.js';
+import { cartsRouter } from './routers/carts.router.js';
+
 
 const app = express();
-const productManager = new ProductManager();
 
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/products', async (req, res) => {
-    try {
-        let limit = req.query.limit;
-
-        let products = await productManager.getProducts();
-
-        if (!limit) {
-            res.send(products);
-        }
-        else {
-            let productsFiltrados = products.filter(product => product.id <= limit);
-            res.send(productsFiltrados);
-        }
-    } catch (error) {
-        console.log('No se pudo leer los productos');
-    }
-});
-
-app.get('/products/:pid', async (req, res) => {
-    try {
-        let pid = req.params.pid;
-
-        let product = await productManager.getProductByID(pid);
-
-        if (!pid) {
-            console.log('No se envio el PID');
-        }
-        else {
-            res.send(product);
-        }
-    } catch (error) {
-        console.log('No se pudo leer los productos');
-    }
-});
+// Ruta de products para "/api/products"
+app.use('/api/products', productsRouter);
+// Ruta de carts para "/api/carts"
+app.use('/api/carts', cartsRouter);
 
 app.listen(8080, () => {
     console.log('Esta escuchando el 8080');

@@ -40,7 +40,7 @@ export default class ProductManager {
                 return;
             }
 
-            if (product.description == null || product.price == null || product.thumbnail == null || product.code == null || product.stock == null) {
+            if (product.title == null || product.description == null || product.price == null || product.thumbnail == null || product.code == null || product.stock == null || product.category == null || product.status == null) {
                 console.log("Falta un dato del producto. Todos los campos son obligatorios");
                 return;
             }
@@ -57,7 +57,9 @@ export default class ProductManager {
     }
 
     #getID() {
+        this.products.forEach(product => product.id > this.#id ? this.#id = product.id : this.#id);
         this.#id++;
+        //console.log(this.#id);
         return this.#id;
     }
 
@@ -113,7 +115,7 @@ export default class ProductManager {
     async deleteProduct(idProduct) {
         try {
             const ProductIndex = this.products.findIndex(
-                (product) => product.id === idProduct
+                (product) => product.id == idProduct
             );
 
             if (ProductIndex === -1) {
