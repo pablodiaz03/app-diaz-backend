@@ -1,112 +1,112 @@
 [
-    {
-      "id": 1,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x1.5 NEGRO",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF1.5-N",
-      "stock": 1000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 2,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x1.5 ROJO",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF1.5-R",
-      "stock": 2000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 3,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x1.5 CELESTE",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF1.5-C",
-      "stock": 3000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 4,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x1.5 MARRON",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF1.5-M",
-      "stock": 4000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 5,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x1.5 VERDE/AMARILLO",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF1.5-V/A",
-      "stock": 5000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 6,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1X4 NEGRO",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF4-N",
-      "stock": 6000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 7,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x4 ROJO",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF4-R",
-      "stock": 7000,
-      "category": "Cables",
-      "status": true
-    },
-    {       
-      "id": 8,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x4 CELESTE",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF4-C",
-      "stock": 8000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 9,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x4 MARRON",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF4-M",
-      "stock": 9000,
-      "category": "Cables",
-      "status": true
-    },
-    {
-      "id": 10,
-      "title": "Cables Unipolares",
-      "description": "Cable unipolar 1x1.4 VERDE/AMARILLO",
-      "price": 1500,
-      "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
-      "code": "UF4-V/A",
-      "stock": 10000,
-      "category": "Cables",
-      "status": true
-    }
-  ]
+  {
+    "id": 1,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x1.5 NEGRO",
+    "price": 1500,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF1.5-N",
+    "stock": 1000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x1.5 ROJO",
+    "price": 1800,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF1.5-R",
+    "stock": 2000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 3,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x1.5 CELESTE",
+    "price": 1900,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF1.5-C",
+    "stock": 3000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 4,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x1.5 MARRON",
+    "price": 2000,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF1.5-M",
+    "stock": 4000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 5,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x1.5 VERDE/AMARILLO",
+    "price": 2100,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF1.5-V/A",
+    "stock": 5000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 6,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1X4 NEGRO",
+    "price": 2600,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF4-N",
+    "stock": 6000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 7,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x4 ROJO",
+    "price": 3500,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF4-R",
+    "stock": 7000,
+    "category": "Cables",
+    "status": true
+  },
+  {       
+    "id": 8,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x4 CELESTE",
+    "price": 4100,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF4-C",
+    "stock": 8000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 9,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x4 MARRON",
+    "price": 4500,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF4-M",
+    "stock": 9000,
+    "category": "Cables",
+    "status": true
+  },
+  {
+    "id": 10,
+    "title": "Cables Unipolares",
+    "description": "Cable unipolar 1x1.4 VERDE/AMARILLO",
+    "price": 5000,
+    "thumbnail": "D:\\Users\\Pablo\\Documents\\Coder\\foto.jpg",
+    "code": "UF4-V/A",
+    "stock": 10000,
+    "category": "Cables",
+    "status": true
+  }
+]
