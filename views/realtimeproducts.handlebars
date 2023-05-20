@@ -1,9 +1,14 @@
-<h1>Listado de Productos: {{cant}} encontrados</h1>
+<button id='agregarItem' onclick='addItem()'>Agregar Item</button>
+<br>
+<input type='text' id='idItem' placeholder="Ingrese el ID del item"/>
+<button id='eliminarItem' onclick='deleteItem()'>Eliminar Item</button>
 
-<ul>
-	{{#each products}}
+<h3>Listado de Productos: <strong id='titleCant'></strong> encontrados</h3>
+
+<ul id='lista'>
+	{{!-- {{#each products}}
 		<li>{{this.code}} - {{this.description}} - $ {{this.price}}</li>
-	{{/each}}
+	{{/each}} --}}
 </ul>
 
 <script src='/socket.io/socket.io.js'></script>

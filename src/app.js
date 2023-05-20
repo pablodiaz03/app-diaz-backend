@@ -4,8 +4,10 @@ import { cartsRouter } from './routers/carts.router.js';
 import handlerbars from 'express-handlebars';
 import { Server } from 'socket.io';
 import viewsRouter from './routers/views.router.js';
+import ProductController from '../ProductManager.js';
 
 const app = express();
+const productController = new ProductController();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -38,17 +40,34 @@ const webServer = app.listen(8080, () => {
 const io = new Server(webServer);
 
 // Eventos de socket.io
-io.on('connection', (socket) => {
-    console.log('Socket connection');
-    // Envio los mensajes al cliente que se conectó
-    // socket.emit('messages', messages);
+io.on('connection', async (socket) => {
+    console.log('Cliente conectado');
 
-    // Escucho los mensajes enviado por el cliente y se los propago a todos
-    socket.on('message', (data) => {
-        console.log(data);
-        // Agrego el mensaje al array de mensajes
+    // Envio los productos al cliente que se conectó
+    const products = await productController.getProducts();
+
+    socket.emit('reload', products);
+
+    // Si alguien agrega un item se los propago a todos
+    socket.on('addItem', async (product) => {
+        // Agrego el producto
+        await productController.addProduct(product);
+        console.log(product);
+
         // Propago el evento a todos los clientes conectados
-        // io.emit('messages', messages);
+        const products = await productController.getProducts();
+        console.log(products);
+        io.emit('reload', products);
+    });
+
+    socket.on('deleteItem', async (idProduct) => {
+        // Agrego el producto
+        await productController.deleteProduct(idProduct);
+
+        // Propago el evento a todos los clientes conectados
+        const products = await productController.getProducts();
+        console.log(products);
+        io.emit('reload', products);
     });
 });
 

@@ -15,7 +15,7 @@ viewsRouter.get('/realtimeproducts', async (req, res) => {
     const products = await productController.getProducts();
     const cant = products.length;
 
-    res.render('realtimeproducts', { products, cant });
+    res.render('realtimeproducts');
 });
 
 

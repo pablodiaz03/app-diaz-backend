@@ -32,7 +32,9 @@ export default class ProductManager {
     async addProduct(product) {
         try {
             const ProductIndex = this.products.findIndex(
-                (producto) => producto.code === product.code
+                // Comento esta linea para hacer andar el agregar del websocket
+                // (producto) => producto.code === product.code 
+                (producto) => producto.id === product.id
             );
 
             if (ProductIndex != -1) {
